@@ -1,0 +1,21 @@
+[project]
+name = "python-pyside6-template"
+version = "0.1.0"
+description = "A minimal PySide6 desktop application template"
+requires-python = ">=3.12"
+dependencies = [
+    "PySide6>=6.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-qt>=4.4.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
